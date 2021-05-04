@@ -1,0 +1,95 @@
+[0.018s] Invoking command in '/home/sigmaros/dev_ws/build/urdf2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/urdf2 -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/urdf2
+[0.036s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.062s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.274s] -- Found rclpy: 1.0.5 (/opt/ros/foxy/share/rclpy/cmake)
+[0.274s] -- Found gazebo_ros: 3.5.3 (/opt/ros/foxy/share/gazebo_ros/cmake)
+[0.319s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.323s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.472s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.536s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.538s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.787s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.823s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[0.826s] -- Looking for ignition-math6 -- found version 6.7.0
+[0.831s] -- Searching for dependencies of ignition-math6
+[0.833s] -- Looking for OGRE...
+[0.840s] -- Found Ogre Ghadamon (1.9.0)
+[0.840s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.853s] -- Looking for OGRE_Paging...
+[0.853s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.853s] -- Looking for OGRE_Terrain...
+[0.854s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.854s] -- Looking for OGRE_Property...
+[0.854s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.854s] -- Looking for OGRE_RTShaderSystem...
+[0.854s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.854s] -- Looking for OGRE_Volume...
+[0.854s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.854s] -- Looking for OGRE_Overlay...
+[0.854s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.003s] -- Looking for ignition-math6 -- found version 6.7.0
+[1.004s] -- Looking for ignition-transport8 -- found version 8.2.0
+[1.004s] -- Searching for dependencies of ignition-transport8
+[1.027s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[1.040s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.046s] -- Checking for module 'libzmq >= 4'
+[1.063s] --   Found libzmq , version 4.3.2
+[1.115s] -- Checking for module 'uuid'
+[1.134s] --   Found uuid, version 2.34.0
+[1.176s] -- Looking for ignition-msgs5 -- found version 5.7.0
+[1.177s] -- Searching for dependencies of ignition-msgs5
+[1.202s] -- Looking for ignition-math6 -- found version 6.7.0
+[1.208s] -- Checking for module 'tinyxml2'
+[1.225s] --   Found tinyxml2, version 6.2.0
+[1.269s] -- Looking for ignition-msgs5 -- found version 5.7.0
+[1.270s] -- Looking for ignition-common3 -- found version 3.11.1
+[1.271s] -- Searching for dependencies of ignition-common3
+[1.271s] -- Looking for dlfcn.h - found
+[1.271s] -- Looking for libdl - found
+[1.280s] -- Searching for <ignition-common3> component [graphics]
+[1.281s] -- Looking for ignition-common3-graphics -- found version 3.11.1
+[1.281s] -- Searching for dependencies of ignition-common3-graphics
+[1.282s] -- Looking for ignition-math6 -- found version 6.7.0
+[1.283s] -- Looking for ignition-fuel_tools4 -- found version 4.3.0
+[1.284s] -- Searching for dependencies of ignition-fuel_tools4
+[1.314s] -- Checking for module 'jsoncpp'
+[1.331s] --   Found jsoncpp, version 1.7.4
+[1.380s] -- Checking for module 'libzip'
+[1.398s] --   Found libzip, version 1.5.1
+[1.442s] -- Looking for ignition-common3 -- found version 3.11.1
+[1.442s] -- Looking for ignition-msgs5 -- found version 5.7.0
+[1.443s] -- Gazebo version: 11.3
+[1.454s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.532s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.535s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.535s] -- Added test 'lint_cmake' to check CMake code style
+[1.536s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.537s] -- Added test 'xmllint' to check XML markup files
+[1.541s] -- Configuring done
+[1.545s] -- Generating done
+[1.547s] -- Build files have been written to: /home/sigmaros/dev_ws/build/urdf2
+[1.558s] Invoked command in '/home/sigmaros/dev_ws/build/urdf2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/urdf2 -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/urdf2
+[1.561s] Invoking command in '/home/sigmaros/dev_ws/build/urdf2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/sigmaros/dev_ws/build/urdf2 -- -j4 -l4
+[1.614s] Invoked command in '/home/sigmaros/dev_ws/build/urdf2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/sigmaros/dev_ws/build/urdf2 -- -j4 -l4
+[1.654s] Invoking command in '/home/sigmaros/dev_ws/build/urdf2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/sigmaros/dev_ws/build/urdf2
+[1.663s] -- Install configuration: ""
+[1.663s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf
+[1.664s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/bot.urdf.xml
+[1.664s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch
+[1.664s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/demo.launch.py
+[1.664s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/package_run_dependencies/urdf2
+[1.664s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/parent_prefix_path/urdf2
+[1.664s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/ament_prefix_path.sh
+[1.665s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/ament_prefix_path.dsv
+[1.665s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/path.sh
+[1.665s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/path.dsv
+[1.665s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.bash
+[1.665s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.sh
+[1.665s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.zsh
+[1.665s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.dsv
+[1.665s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/package.dsv
+[1.666s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/packages/urdf2
+[1.666s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/cmake/urdf2Config.cmake
+[1.666s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/cmake/urdf2Config-version.cmake
+[1.666s] -- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/package.xml
+[1.669s] Invoked command in '/home/sigmaros/dev_ws/build/urdf2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/sigmaros/dev_ws/build/urdf2

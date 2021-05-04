@@ -1,0 +1,7 @@
+CMake Error at CMakeLists.txt:30:
+  Parse error.  Expected a command name, got unquoted argument with text ":".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/sigmaros/dev_ws/build/urdf2/CMakeFiles/CMakeOutput.log".
+See also "/home/sigmaros/dev_ws/build/urdf2/CMakeFiles/CMakeError.log".

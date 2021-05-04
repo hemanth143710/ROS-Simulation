@@ -1,0 +1,118 @@
+[0.023s] Invoking command in '/home/sigmaros/dev_ws/build/urdf2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/urdf2 -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/urdf2
+[0.201s] -- The C compiler identification is GNU 9.3.0
+[0.339s] -- The CXX compiler identification is GNU 9.3.0
+[0.356s] -- Check for working C compiler: /usr/bin/cc
+[0.460s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.462s] -- Detecting C compiler ABI info
+[0.542s] -- Detecting C compiler ABI info - done
+[0.558s] -- Detecting C compile features
+[0.560s] -- Detecting C compile features - done
+[0.566s] -- Check for working CXX compiler: /usr/bin/c++
+[0.662s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.663s] -- Detecting CXX compiler ABI info
+[0.756s] -- Detecting CXX compiler ABI info - done
+[0.771s] -- Detecting CXX compile features
+[0.772s] -- Detecting CXX compile features - done
+[0.778s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.811s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[0.811s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.062s] -- Found rclpy: 1.0.5 (/opt/ros/foxy/share/rclpy/cmake)
+[1.064s] -- Found gazebo_ros: 3.5.3 (/opt/ros/foxy/share/gazebo_ros/cmake)
+[1.148s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.160s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.335s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.373s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.481s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.569s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.571s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.574s] -- Looking for pthread.h
+[1.664s] -- Looking for pthread.h - found
+[1.664s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.748s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.748s] -- Looking for pthread_create in pthreads
+[1.815s] -- Looking for pthread_create in pthreads - not found
+[1.815s] -- Looking for pthread_create in pthread
+[1.896s] -- Looking for pthread_create in pthread - found
+[1.897s] -- Found Threads: TRUE  
+[2.127s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[2.129s] -- Checking for module 'bullet>=2.82'
+[2.147s] --   Found bullet, version 2.88
+[2.285s] -- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") 
+[2.351s] -- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") 
+[2.417s] -- Found assimp: /usr/include (found version "5.0.0") 
+[2.479s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.517s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.547s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[2.555s] -- Looking for ignition-math6 -- found version 6.7.0
+[2.567s] -- Searching for dependencies of ignition-math6
+[2.570s] -- Looking for OGRE...
+[2.571s] -- OGRE_PREFIX_WATCH changed.
+[2.576s] -- Checking for module 'OGRE'
+[2.593s] --   Found OGRE, version 1.9.0
+[2.637s] -- Found Ogre Ghadamon (1.9.0)
+[2.647s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.660s] -- Looking for OGRE_Paging...
+[2.668s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.668s] -- Looking for OGRE_Terrain...
+[2.675s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.675s] -- Looking for OGRE_Property...
+[2.682s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.682s] -- Looking for OGRE_RTShaderSystem...
+[2.689s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.689s] -- Looking for OGRE_Volume...
+[2.696s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.697s] -- Looking for OGRE_Overlay...
+[2.704s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.855s] -- Looking for ignition-math6 -- found version 6.7.0
+[2.858s] -- Looking for ignition-transport8 -- found version 8.2.0
+[2.858s] -- Searching for dependencies of ignition-transport8
+[2.880s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[2.895s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.900s] -- Checking for module 'libzmq >= 4'
+[2.919s] --   Found libzmq , version 4.3.2
+[2.968s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.975s] -- Checking for module 'uuid'
+[2.993s] --   Found uuid, version 2.34.0
+[3.042s] -- Found UUID: TRUE  
+[3.045s] -- Looking for ignition-msgs5 -- found version 5.7.0
+[3.046s] -- Searching for dependencies of ignition-msgs5
+[3.069s] -- Looking for ignition-math6 -- found version 6.7.0
+[3.076s] -- Checking for module 'tinyxml2'
+[3.093s] --   Found tinyxml2, version 6.2.0
+[3.141s] -- Looking for ignition-msgs5 -- found version 5.7.0
+[3.144s] -- Looking for ignition-common3 -- found version 3.11.1
+[3.144s] -- Searching for dependencies of ignition-common3
+[3.145s] -- Looking for dlfcn.h - found
+[3.146s] -- Looking for libdl - found
+[3.148s] -- Found DL: TRUE  
+[3.156s] -- Searching for <ignition-common3> component [graphics]
+[3.159s] -- Looking for ignition-common3-graphics -- found version 3.11.1
+[3.160s] -- Searching for dependencies of ignition-common3-graphics
+[3.160s] -- Looking for ignition-math6 -- found version 6.7.0
+[3.165s] -- Looking for ignition-fuel_tools4 -- found version 4.3.0
+[3.165s] -- Searching for dependencies of ignition-fuel_tools4
+[3.250s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+[3.260s] -- Checking for module 'jsoncpp'
+[3.278s] --   Found jsoncpp, version 1.7.4
+[3.322s] -- Found JSONCPP: TRUE  
+[3.329s] -- Checking for module 'libzip'
+[3.347s] --   Found libzip, version 1.5.1
+[3.391s] -- Found ZIP: TRUE  
+[3.392s] -- Looking for ignition-common3 -- found version 3.11.1
+[3.392s] -- Looking for ignition-msgs5 -- found version 5.7.0
+[3.395s] -- Gazebo version: 11.3
+[3.406s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.502s] CMake Error at CMakeLists.txt:38 (endif):
+[3.502s]   endif An ENDIF command was found outside of a proper IF ENDIF structure.
+[3.502s]   Or its arguments did not match the opening IF command.
+[3.502s] 
+[3.502s] 
+[3.507s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.510s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.511s] -- Added test 'lint_cmake' to check CMake code style
+[3.512s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.513s] -- Added test 'xmllint' to check XML markup files
+[3.518s] -- Configuring incomplete, errors occurred!
+[3.518s] See also "/home/sigmaros/dev_ws/build/urdf2/CMakeFiles/CMakeOutput.log".
+[3.518s] See also "/home/sigmaros/dev_ws/build/urdf2/CMakeFiles/CMakeError.log".
+[3.530s] Invoked command in '/home/sigmaros/dev_ws/build/urdf2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/urdf2 -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/urdf2

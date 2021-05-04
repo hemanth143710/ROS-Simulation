@@ -1,0 +1,2 @@
+Invoking command in '/home/sigmaros/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/cpp_pubsub
+Invoked command in '/home/sigmaros/dev_ws/build/cpp_pubsub' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/cpp_pubsub

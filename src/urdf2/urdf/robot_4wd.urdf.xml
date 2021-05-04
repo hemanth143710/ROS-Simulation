@@ -1,0 +1,587 @@
+<?xml version="1.0"?>
+<robot name="myrobot" xmlns:xacro="http://ros.org./wiki/xacro">
+    <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+    <gazebo reference="payload_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="left_wheel">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="front_left">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <gazebo reference="front_right">
+        <material>Gazebo/Red</material>
+    </gazebo>
+   
+    <gazebo reference="RPlidar_base">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="RPlidar">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+    <gazebo reference="pole_1">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="pole_2">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="pole_3">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="pole_4">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <link name="base_footprint">
+        
+    </link>
+    
+<!-- excelating base link -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size= "0.4 0.3 0.1" />
+            </geometry>
+            <material name="black">
+                <color rgba="0 0.0 0.0 1"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <box size= "0.4 0.3 0.1" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="6"/>
+            <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.085" iyz="0.0" izz="0.125"/>
+        </inertial>
+    </link>
+    <joint name="base_link_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <!-- excellating front left wheel -->
+    <link name="front_wheel_left">
+        <visual>
+            <geometry>
+                <cylinder radius="0.06" length="0.03"/>
+            </geometry>
+            <material name="green">
+                <color rgba="0.0 1.0 0.0 1"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.06" length="0.03"/>
+            </geometry>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>1</mu>
+                        <mu2>1</mu2>
+                        <slip1>0</slip1>
+                        <slip2>0</slip2>
+                    </ode>
+                </friction>
+                <contact>
+                    <ode>
+                        <soft_cfm>0</soft_cfm>
+                        <soft_erp>0.2</soft_erp>
+                        <kp>1e+13</kp>
+                        <kd>1</kd>
+                        <max_vel>3</max_vel>
+                        <min_depth>0.01</min_depth>
+                    </ode>
+                </contact>
+            </surface>
+        </collision>
+        <inertial>
+            <mass value="0.4"/>
+            <inertia ixx="0.00039" ixy="0" ixz="0" iyy="0.00039" iyz="0.0" izz="0.00072"/>
+        </inertial>
+    </link>
+    <joint name="front_wheel_joint_left" type="continuous">
+        <axis xyz="0.0 0.0 1"/>
+        <parent link="base_link"/>
+        <child link="front_wheel_left"/>
+        <origin xyz="0.12 0.15 -0.05" rpy="-1.5708 0.0 0.0"/>
+    </joint>
+
+<!-- excelating front right wheel -->
+    <link name="front_wheel_right">
+        <visual>
+            <geometry>
+                <cylinder radius="0.06" length="0.03"/>
+            </geometry>
+            <material name="green">
+                <color rgba="0.0 1.0 0.0 1"/>
+            </material>
+        </visual>
+
+        <collision>
+            <geometry>
+                <cylinder radius="0.06" length="0.03"/>
+            </geometry>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>1</mu>
+                        <mu2>1</mu2>
+                        <slip1>0</slip1>
+                        <slip2>0</slip2>
+                    </ode>
+                </friction>
+                <contact>
+                    <ode>
+                        <soft_cfm>0</soft_cfm>
+                        <soft_erp>0.2</soft_erp>
+                        <kp>1e+13</kp>
+                        <kd>1</kd>
+                        <max_vel>3</max_vel>
+                        <min_depth>0.01</min_depth>
+                    </ode>
+                </contact>
+            </surface>
+        </collision>
+        <inertial>
+            <mass value="0.4"/>
+            <inertia ixx="0.00039" ixy="0" ixz="0" iyy="0.00039" iyz="0.0" izz="0.00072"/>
+        </inertial>
+    </link>
+    <joint name="front_wheel_joint_right" type="continuous">
+        <axis xyz="0.0 0.0 1"/>
+        <parent link="base_link"/>
+        <child link="front_wheel_right"/>
+        <origin xyz="0.12 -0.15 -0.05" rpy="-1.5708 0.0 0.0"/>
+    </joint>
+
+<!-- excelating rear wheel right -->
+    <link name="rear_wheel_right">
+        <visual>
+           <geometry>
+               <cylinder radius="0.06" length="0.03"/>
+           </geometry>
+           <material name="green">
+               <color rgba="0.0 1.0 0.0 1"/>
+           </material> 
+        </visual>
+        <collision>
+            <geometry>
+               <cylinder radius="0.06" length="0.03"/>
+           </geometry>
+           <surface>
+                <friction>
+                    <ode>
+                        <mu>1</mu>
+                        <mu2>1</mu2>
+                        <slip1>0</slip1>
+                        <slip2>0</slip2>
+                    </ode>
+                </friction>
+                <contact>
+                    <ode>
+                        <soft_cfm>0</soft_cfm>
+                        <soft_erp>0.2</soft_erp>
+                        <kp>1e+13</kp>
+                        <kd>1</kd>
+                        <max_vel>3</max_vel>
+                        <min_depth>0.01</min_depth>
+                    </ode>
+                </contact>
+            </surface>
+        </collision>
+        <inertial>
+            <mass value="0.4"/>
+            <inertia ixx="0.00039" ixy="0" ixz="0" iyy="0.00039" iyz="0.0" izz="0.00072"/>
+        </inertial>
+    </link>
+
+    <joint name="rear_right_wheel_joint" type="continuous">
+        <axis xyz="0.0 0.0 1"/>
+        <parent link="base_link"/>
+        <child link="rear_wheel_right"/>
+        <origin xyz="-0.12 -0.15 -0.05" rpy="-1.5708 0.0 0.0"/>
+    </joint>
+
+<!-- excelating rear front wheel -->
+    <link name="rear_left_wheel">
+        <visual>
+           <geometry>
+               <cylinder radius="0.06" length="0.03"/>
+           </geometry>
+           <material name="green">
+               <color rgba="0.0 1.0 0.0 1"/>
+           </material> 
+        </visual>
+        <collision>
+            <geometry>
+               <cylinder radius="0.06" length="0.03"/>
+           </geometry>
+           <surface>
+                <friction>
+                    <ode>
+                        <mu>1</mu>
+                        <mu2>1</mu2>
+                        <slip1>0</slip1>
+                        <slip2>0</slip2>
+                    </ode>
+                </friction>
+                <contact>
+                    <ode>
+                        <soft_cfm>0</soft_cfm>
+                        <soft_erp>0.2</soft_erp>
+                        <kp>1e+13</kp>
+                        <kd>1</kd>
+                        <max_vel>3</max_vel>
+                        <min_depth>0.01</min_depth>
+                    </ode>
+                </contact>
+            </surface>
+        </collision>
+        <inertial>
+            <mass value="0.4"/>
+            <inertia ixx="0.00039" ixy="0" ixz="0" iyy="0.00039" iyz="0.0" izz="0.00072"/>
+        </inertial>
+    </link>
+
+    <joint name="rear_left_wheel_joint" type="continuous">
+        <axis xyz="0.0 0.0 1"/>
+        <parent link="base_link"/>
+        <child link="rear_left_wheel"/>
+        <origin xyz="-0.12 0.15 -0.05" rpy="-1.5708 0.0 0.0"/>
+    </joint>
+<!-- excelating rplidar sensor -->
+    <link name="RPlidar_base">
+    <visual>
+      <geometry>
+       <box size= "0.05 0.05 0.05" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </collision>    
+  </link>
+
+  <joint name="RPlida_base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="RPlidar_base"/>
+    <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <link name="RPlidar">
+    <visual>
+      <geometry>
+       <cylinder radius="0.06" length="0.02"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.06" length="0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="RPlidar_joint" type="fixed">
+    <parent link="RPlidar_base"/>
+    <child link="RPlidar"/>
+    <origin xyz="0.0 0.0 0.034" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+<!-- excelating IMU -->
+    <link name="imu_link">
+    </link>
+
+    <!--excelating IMU joint -->
+    <joint name="imu_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="imu_link"/>
+      <origin xyz="0.0 0 0.068" rpy="0 0 0"/>
+    </joint>   
+
+  <!-- excelating poles -->
+  <link name="pole_1">
+    <visual>
+        <geometry>
+            <cylinder radius="0.013" length="0.1"/>
+        </geometry>
+        <material name="green">
+            <color rgba="0.0 1.0 0.0 1"/>
+        </material>
+    </visual>
+
+    <collision>
+        <geometry>
+            <cylinder radius="0.013" length="0.1"/>
+        </geometry>
+    </collision>
+  </link>
+
+  <joint name="pole_1_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="pole_1"/>
+    <origin xyz="0.13 0.1 0.1" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <link name="pole_2">
+    <visual>
+        <geometry>
+            <cylinder radius="0.013" length="0.1"/>
+        </geometry>
+        <material name="green">
+            <color rgba="0.0 1.0 0.0 1"/>
+        </material>
+    </visual>
+
+    <collision>
+        <geometry>
+            <cylinder radius="0.013" length="0.1"/>
+        </geometry>
+    </collision>
+  </link>
+
+  <joint name="pole_2_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="pole_2"/>
+    <origin xyz="0.13 -0.1 0.1" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <link name="pole_3">
+    <visual>
+        <geometry>
+        <cylinder radius="0.013" length="0.1"/>
+        </geometry>
+        <material name="green">
+            <color rgba="0.0 1.0 0.0 1"/>
+        </material>
+    </visual>
+
+    <collision>
+        <geometry>
+            <cylinder radius="0.013" length="0.1"/>
+        </geometry>
+    </collision>
+  </link>
+
+  <joint name="pole_3_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="pole_3"/>
+    <origin xyz="-0.13 0.1 0.1" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <link name="pole_4">
+    <visual>
+        <geometry>
+            <cylinder radius="0.013" length="0.1"/>
+        </geometry>
+        <material name="green">
+            <color rgba="0.0 1.0 0.0 1"/>
+        </material>
+    </visual>
+
+    <collision>
+        <geometry>
+            <cylinder radius="0.013" length="0.1"/>
+        </geometry>
+    </collision>
+  </link>
+
+  <joint name="pole_4_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="pole_4"/>
+    <origin xyz="-0.13 -0.1 0.1" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <!-- excelating payload surface -->
+
+  <link name="payload_link">
+    <visual>
+      <geometry>
+        <box size= "0.4 0.3 0.02" />
+      </geometry>
+      <material name="black">
+        <color rgba="0.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.4 0.3 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="payload_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="payload_link"/>
+    <origin xyz="0.0 0.0 0.15" rpy="0.0 0.0 0.0"/>    
+  </joint>
+
+  <!-- excelating gazebo differential plugins -->
+    <gazebo>
+        <plugin name='skid_steer_drive' filename='libgazebo_ros_diff_drive.so'>
+
+        <ros>
+          <!-- <namespace>/demo</namespace> -->
+          <!-- <remapping>cmd_vel:=cmd_demo</remapping> -->
+          <!-- <remapping>odom:=odom_demo</remapping> -->
+        </ros>
+
+        <!-- Number of wheel pairs -->
+        <num_wheel_pairs>2</num_wheel_pairs>
+        
+        <!-- wheels0 -->
+        <left_joint>front_wheel_joint_left</left_joint>
+        <right_joint>front_wheel_joint_right</right_joint>
+
+        <!-- wheels1-->
+        <left_joint>rear_left_wheel_joint</left_joint>
+        <right_joint>rear_right_wheel_joint</right_joint>
+
+        <!-- kinematics -->
+        <wheel_separation>0.3</wheel_separation>
+        <wheel_separation>0.3</wheel_separation>
+
+        <wheel_diameter>0.12</wheel_diameter>
+        <wheel_diameter>0.12</wheel_diameter>
+
+        <!-- limits -->
+        <max_wheel_torque>6.16</max_wheel_torque>
+        <max_wheel_acceleration>10</max_wheel_acceleration>
+
+        <!-- output -->
+        <publish_odom>true</publish_odom>
+        <publish_odom_tf>true</publish_odom_tf>
+        <publish_wheel_tf>true</publish_wheel_tf>
+
+        <command_topic>cmd_vel</command_topic>
+        <odometry_topic>odom</odometry_topic>
+
+        <odometry_frame>odom</odometry_frame>
+        <robot_base_frame>base_footprint</robot_base_frame>
+
+      </plugin>
+    </gazebo>
+    
+
+    <!-- excelating laser plugin -->
+    <gazebo reference="RPlidar">
+        <sensor type="ray" name="laser">
+            <pose>0 0 0 0 0 0</pose>
+            <visualize>false</visualize>
+            <update_rate>40</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>360</samples>
+                        <resolution>1</resolution>
+                        <min_angle>0</min_angle>
+                        <max_angle>6.28319</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.2</min>
+                    <max>8</max>
+                    <resolution>0.01</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <always_on>true</always_on>
+            <update_rate>1.0</update_rate>
+            <plugin name="gpu_laser" filename="libgazebo_ros_ray_sensor.so">
+
+                <ros>
+                    <!-- <namespace>/demo/</namespace> -->
+                    <remapping>~/out:=scan</remapping>
+                </ros>
+
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>RPlidar</frame_name>
+
+            </plugin>
+        </sensor>
+    </gazebo>   
+
+    <gazebo reference="imu_link">
+        <sensor name="myrobot_imu" type="imu">
+            <always_on>true</always_on>
+            <update_rate>200</update_rate>
+            <imu>
+                <angular_velocity>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </z>
+                </angular_velocity>
+                <linear_acceleration>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </z>
+                </linear_acceleration>
+            </imu>
+            <plugin name="robot_imu" filename="libgazebo_ros_imu_sensor.so">
+                <ros>
+                    <remapping>~/out:=imu</remapping>
+                </ros>
+            </plugin>
+        </sensor>
+    </gazebo>
+</robot>

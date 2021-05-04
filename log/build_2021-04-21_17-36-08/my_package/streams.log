@@ -1,0 +1,58 @@
+[0.022s] Invoking command in '/home/sigmaros/dev_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/my_package
+[0.090s] -- The C compiler identification is GNU 9.3.0
+[0.168s] -- The CXX compiler identification is GNU 9.3.0
+[0.174s] -- Check for working C compiler: /usr/bin/cc
+[0.264s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.265s] -- Detecting C compiler ABI info
+[0.349s] -- Detecting C compiler ABI info - done
+[0.364s] -- Detecting C compile features
+[0.365s] -- Detecting C compile features - done
+[0.368s] -- Check for working CXX compiler: /usr/bin/c++
+[0.460s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.461s] -- Detecting CXX compiler ABI info
+[0.555s] -- Detecting CXX compiler ABI info - done
+[0.573s] -- Detecting CXX compile features
+[0.575s] -- Detecting CXX compile features - done
+[0.581s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.615s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[0.615s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.847s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.934s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.935s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.935s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sigmaros/dev_ws/src/my_package/include>
+[0.936s] -- Configured cppcheck exclude dirs and/or files: 
+[0.936s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.936s] -- Configured cpplint exclude dirs and/or files: 
+[0.937s] -- Added test 'lint_cmake' to check CMake code style
+[0.938s] -- Added test 'uncrustify' to check C / C++ code style
+[0.938s] -- Configured uncrustify additional arguments: 
+[0.939s] -- Added test 'xmllint' to check XML markup files
+[0.941s] -- Configuring done
+[0.945s] -- Generating done
+[0.946s] -- Build files have been written to: /home/sigmaros/dev_ws/build/my_package
+[0.950s] Invoked command in '/home/sigmaros/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/my_package
+[0.952s] Invoking command in '/home/sigmaros/dev_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sigmaros/dev_ws/build/my_package -- -j4 -l4
+[0.997s] [35m[1mScanning dependencies of target my_node[0m
+[1.009s] [ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[1.044s] [100%] [32m[1mLinking CXX executable my_node[0m
+[1.096s] [100%] Built target my_node
+[1.109s] Invoked command in '/home/sigmaros/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sigmaros/dev_ws/build/my_package -- -j4 -l4
+[1.148s] Invoking command in '/home/sigmaros/dev_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/sigmaros/dev_ws/build/my_package
+[1.157s] -- Install configuration: ""
+[1.158s] -- Installing: /home/sigmaros/dev_ws/install/my_package/lib/my_package/my_node
+[1.158s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[1.158s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[1.158s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[1.158s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[1.159s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/environment/path.sh
+[1.159s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/environment/path.dsv
+[1.159s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/local_setup.bash
+[1.159s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/local_setup.sh
+[1.159s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/local_setup.zsh
+[1.159s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/local_setup.dsv
+[1.160s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/package.dsv
+[1.160s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/ament_index/resource_index/packages/my_package
+[1.160s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[1.160s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[1.160s] -- Installing: /home/sigmaros/dev_ws/install/my_package/share/my_package/package.xml
+[1.164s] Invoked command in '/home/sigmaros/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/sigmaros/dev_ws/build/my_package

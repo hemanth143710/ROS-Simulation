@@ -1,0 +1,9 @@
+[0.014s] Invoking command in '/home/sigmaros/dev_ws/build/urdf2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/urdf2 -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/urdf2
+[0.028s] CMake Error at CMakeLists.txt:30:
+[0.028s]   Parse error.  Expected a command name, got unquoted argument with text ":".
+[0.029s] 
+[0.029s] 
+[0.029s] -- Configuring incomplete, errors occurred!
+[0.029s] See also "/home/sigmaros/dev_ws/build/urdf2/CMakeFiles/CMakeOutput.log".
+[0.029s] See also "/home/sigmaros/dev_ws/build/urdf2/CMakeFiles/CMakeError.log".
+[0.031s] Invoked command in '/home/sigmaros/dev_ws/build/urdf2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/urdf2 -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/urdf2

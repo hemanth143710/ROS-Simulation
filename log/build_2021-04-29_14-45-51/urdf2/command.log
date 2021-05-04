@@ -1,0 +1,6 @@
+Invoking command in '/home/sigmaros/dev_ws/build/urdf2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/urdf2 -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/urdf2
+Invoked command in '/home/sigmaros/dev_ws/build/urdf2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/sigmaros/dev_ws/src/urdf2 -DCMAKE_INSTALL_PREFIX=/home/sigmaros/dev_ws/install/urdf2
+Invoking command in '/home/sigmaros/dev_ws/build/urdf2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/sigmaros/dev_ws/build/urdf2 -- -j4 -l4
+Invoked command in '/home/sigmaros/dev_ws/build/urdf2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/sigmaros/dev_ws/build/urdf2 -- -j4 -l4
+Invoking command in '/home/sigmaros/dev_ws/build/urdf2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/sigmaros/dev_ws/build/urdf2
+Invoked command in '/home/sigmaros/dev_ws/build/urdf2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/sigmaros/dev_ws/build/urdf2

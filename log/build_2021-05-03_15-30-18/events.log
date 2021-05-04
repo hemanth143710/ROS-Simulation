@@ -1,0 +1,41 @@
+[0.000000] (-) TimerEvent: {}
+[0.000373] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000561] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000591] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.000617] (urdf2) JobQueued: {'identifier': 'urdf2', 'dependencies': OrderedDict()}
+[0.000841] (urdf2) JobStarted: {'identifier': 'urdf2'}
+[0.012671] (urdf2) JobProgress: {'identifier': 'urdf2', 'progress': 'cmake'}
+[0.013435] (urdf2) JobProgress: {'identifier': 'urdf2', 'progress': 'build'}
+[0.014802] (urdf2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sigmaros/dev_ws/build/urdf2', '--', '-j4', '-l4'], 'cwd': '/home/sigmaros/dev_ws/build/urdf2', 'env': OrderedDict([('LANGUAGE', 'en_IN:en'), ('USER', 'sigmaros'), ('SSH_AGENT_PID', '1559'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/sigmaros'), ('OLDPWD', '/home/sigmaros'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1358'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'sigmaros'), ('JOURNAL_STREAM', '8:43777'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sigmaros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/sigmaros:@/tmp/.ICE-unix/1618,unix/sigmaros:/tmp/.ICE-unix/1618'), ('INVOCATION_ID', '14b8bc7e9c624ae4af5ae33bcbb3f6d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2a759af7_92b2_420a_9796_0d3c256c94b7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.227'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sigmaros/dev_ws/build/urdf2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.063329] (urdf2) CommandEnded: {'returncode': 0}
+[0.086579] (urdf2) JobProgress: {'identifier': 'urdf2', 'progress': 'install'}
+[0.098096] (urdf2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sigmaros/dev_ws/build/urdf2'], 'cwd': '/home/sigmaros/dev_ws/build/urdf2', 'env': OrderedDict([('LANGUAGE', 'en_IN:en'), ('USER', 'sigmaros'), ('SSH_AGENT_PID', '1559'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/sigmaros'), ('OLDPWD', '/home/sigmaros'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1358'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'sigmaros'), ('JOURNAL_STREAM', '8:43777'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sigmaros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/sigmaros:@/tmp/.ICE-unix/1618,unix/sigmaros:/tmp/.ICE-unix/1618'), ('INVOCATION_ID', '14b8bc7e9c624ae4af5ae33bcbb3f6d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2a759af7_92b2_420a_9796_0d3c256c94b7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.227'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sigmaros/dev_ws/build/urdf2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.099771] (-) TimerEvent: {}
+[0.106988] (urdf2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.107207] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf\n'}
+[0.107494] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/r2d2.rviz\n'}
+[0.107679] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/robot_4wd.urdf.xml\n'}
+[0.107806] (urdf2) StdoutLine: {'line': b'-- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/bot.urdf.xml\n'}
+[0.107925] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch\n'}
+[0.108047] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/bringup.launch.py\n'}
+[0.108132] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/demo.launch.py\n'}
+[0.108228] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/world\n'}
+[0.108350] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/world/emptyworld.world\n'}
+[0.108430] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/package_run_dependencies/urdf2\n'}
+[0.108508] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/parent_prefix_path/urdf2\n'}
+[0.108584] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/ament_prefix_path.sh\n'}
+[0.108661] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/ament_prefix_path.dsv\n'}
+[0.108737] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/path.sh\n'}
+[0.108813] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/path.dsv\n'}
+[0.108888] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.bash\n'}
+[0.108965] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.sh\n'}
+[0.109042] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.zsh\n'}
+[0.109119] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.dsv\n'}
+[0.109195] (urdf2) StdoutLine: {'line': b'-- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/package.dsv\n'}
+[0.109398] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/packages/urdf2\n'}
+[0.109713] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/cmake/urdf2Config.cmake\n'}
+[0.110013] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/cmake/urdf2Config-version.cmake\n'}
+[0.111162] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/package.xml\n'}
+[0.111516] (urdf2) CommandEnded: {'returncode': 0}
+[0.155315] (urdf2) JobEnded: {'identifier': 'urdf2', 'rc': 0}
+[0.156437] (-) EventReactorShutdown: {}

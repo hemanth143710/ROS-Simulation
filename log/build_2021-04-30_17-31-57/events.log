@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000843] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000898] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000930] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.000958] (urdf2) JobQueued: {'identifier': 'urdf2', 'dependencies': OrderedDict()}
+[0.001135] (urdf2) JobStarted: {'identifier': 'urdf2'}
+[0.013502] (urdf2) JobProgress: {'identifier': 'urdf2', 'progress': 'cmake'}
+[0.014978] (urdf2) JobProgress: {'identifier': 'urdf2', 'progress': 'build'}
+[0.016329] (urdf2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sigmaros/dev_ws/build/urdf2', '--', '-j4', '-l4'], 'cwd': '/home/sigmaros/dev_ws/build/urdf2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'sigmaros'), ('SSH_AGENT_PID', '1517'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sigmaros/dev_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/sigmaros'), ('OLDPWD', '/home/sigmaros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1339'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/sigmaros/ros2_install'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sigmaros/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sigmaros'), ('JOURNAL_STREAM', '8:43931'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sigmaros'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/sigmaros/ros2_ws/src/urdf_tutorial/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/sigmaros:@/tmp/.ICE-unix/1560,unix/sigmaros:/tmp/.ICE-unix/1560'), ('INVOCATION_ID', '834c6e6e35a241e68af3990a48b12594'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/aa2021b9_e711_4988_8c8c_c71b87ab8bf5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sigmaros/dev_ws/install/urdf2:/home/sigmaros/dev_ws/install/turtlesim:/home/sigmaros/dev_ws/install/my_package:/home/sigmaros/dev_ws/install/cpp_pubsub:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sigmaros/dev_ws/build/urdf2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sigmaros/dev_ws/install/turtlesim/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/sigmaros/dev_ws/install/urdf2:/home/sigmaros/dev_ws/install/turtlesim:/home/sigmaros/dev_ws/install/my_package:/home/sigmaros/dev_ws/install/cpp_pubsub:/opt/ros/foxy')]), 'shell': False}
+[0.063998] (urdf2) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.090715] (urdf2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.100000] (-) TimerEvent: {}
+[0.200334] (-) TimerEvent: {}
+[0.300640] (-) TimerEvent: {}
+[0.313867] (urdf2) StdoutLine: {'line': b'-- Found rclpy: 1.0.5 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[0.314209] (urdf2) StdoutLine: {'line': b'-- Found gazebo_ros: 3.5.3 (/opt/ros/foxy/share/gazebo_ros/cmake)\n'}
+[0.366634] (urdf2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.370984] (urdf2) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.400732] (-) TimerEvent: {}
+[0.501031] (-) TimerEvent: {}
+[0.541303] (urdf2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.601165] (-) TimerEvent: {}
+[0.607296] (urdf2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.609432] (urdf2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.701298] (-) TimerEvent: {}
+[0.801610] (-) TimerEvent: {}
+[0.882881] (urdf2) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.901725] (-) TimerEvent: {}
+[0.963896] (urdf2) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") \n'}
+[0.971112] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.7.0\n'}
+[0.991478] (urdf2) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.000220] (urdf2) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.001839] (-) TimerEvent: {}
+[1.017693] (urdf2) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.018776] (urdf2) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.035894] (urdf2) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.036178] (urdf2) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.036348] (urdf2) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.036462] (urdf2) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.036608] (urdf2) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.036700] (urdf2) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.036829] (urdf2) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.036921] (urdf2) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.037035] (urdf2) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.037124] (urdf2) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.037210] (urdf2) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.037295] (urdf2) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.101952] (-) TimerEvent: {}
+[1.202226] (-) TimerEvent: {}
+[1.208299] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.7.0\n'}
+[1.209479] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.0\n'}
+[1.210117] (urdf2) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.234119] (urdf2) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[1.248677] (urdf2) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.254089] (urdf2) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.274044] (urdf2) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[1.302366] (-) TimerEvent: {}
+[1.328328] (urdf2) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.347520] (urdf2) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[1.393929] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.7.0\n'}
+[1.394483] (urdf2) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.402997] (-) TimerEvent: {}
+[1.418636] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.7.0\n'}
+[1.424754] (urdf2) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.443999] (urdf2) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[1.490377] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.7.0\n'}
+[1.491574] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.11.1\n'}
+[1.492170] (urdf2) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.492576] (urdf2) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.492710] (urdf2) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.502695] (urdf2) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.502953] (-) TimerEvent: {}
+[1.503819] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.11.1\n'}
+[1.504469] (urdf2) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.504889] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.7.0\n'}
+[1.507579] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.3.0\n'}
+[1.508144] (urdf2) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.544854] (urdf2) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.562804] (urdf2) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[1.603097] (-) TimerEvent: {}
+[1.612116] (urdf2) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.630697] (urdf2) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[1.675384] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.11.1\n'}
+[1.675814] (urdf2) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.7.0\n'}
+[1.678954] (urdf2) StdoutLine: {'line': b'-- Gazebo version: 11.3\n'}
+[1.688375] (urdf2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.703182] (-) TimerEvent: {}
+[1.770605] (urdf2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.773308] (urdf2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.773905] (urdf2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.774368] (urdf2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.775666] (urdf2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.779911] (urdf2) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.787570] (urdf2) StdoutLine: {'line': b'-- Generating done\n'}
+[1.791320] (urdf2) StdoutLine: {'line': b'-- Build files have been written to: /home/sigmaros/dev_ws/build/urdf2\n'}
+[1.803313] (-) TimerEvent: {}
+[1.822883] (urdf2) CommandEnded: {'returncode': 0}
+[1.850298] (urdf2) JobProgress: {'identifier': 'urdf2', 'progress': 'install'}
+[1.862824] (urdf2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sigmaros/dev_ws/build/urdf2'], 'cwd': '/home/sigmaros/dev_ws/build/urdf2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'sigmaros'), ('SSH_AGENT_PID', '1517'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sigmaros/dev_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/sigmaros'), ('OLDPWD', '/home/sigmaros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1339'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/sigmaros/ros2_install'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sigmaros/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sigmaros'), ('JOURNAL_STREAM', '8:43931'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sigmaros'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/sigmaros/ros2_ws/src/urdf_tutorial/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/sigmaros:@/tmp/.ICE-unix/1560,unix/sigmaros:/tmp/.ICE-unix/1560'), ('INVOCATION_ID', '834c6e6e35a241e68af3990a48b12594'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/aa2021b9_e711_4988_8c8c_c71b87ab8bf5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sigmaros/dev_ws/install/urdf2:/home/sigmaros/dev_ws/install/turtlesim:/home/sigmaros/dev_ws/install/my_package:/home/sigmaros/dev_ws/install/cpp_pubsub:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sigmaros/dev_ws/build/urdf2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sigmaros/dev_ws/install/turtlesim/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/sigmaros/dev_ws/install/urdf2:/home/sigmaros/dev_ws/install/turtlesim:/home/sigmaros/dev_ws/install/my_package:/home/sigmaros/dev_ws/install/cpp_pubsub:/opt/ros/foxy')]), 'shell': False}
+[1.872789] (urdf2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.873074] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf\n'}
+[1.873215] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/robot_4wd.urdf.xml\n'}
+[1.873405] (urdf2) StdoutLine: {'line': b'-- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/bot.urdf.xml\n'}
+[1.873498] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch\n'}
+[1.873607] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/bringup.launch.py\n'}
+[1.873697] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/demo.launch.py\n'}
+[1.873785] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/world\n'}
+[1.873872] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/world/emptyworld.world\n'}
+[1.873958] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/package_run_dependencies/urdf2\n'}
+[1.874048] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/parent_prefix_path/urdf2\n'}
+[1.874135] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/ament_prefix_path.sh\n'}
+[1.874219] (urdf2) StdoutLine: {'line': b'-- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/ament_prefix_path.dsv\n'}
+[1.874968] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/path.sh\n'}
+[1.875111] (urdf2) StdoutLine: {'line': b'-- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/path.dsv\n'}
+[1.875347] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.bash\n'}
+[1.875589] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.sh\n'}
+[1.875703] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.zsh\n'}
+[1.875820] (urdf2) StdoutLine: {'line': b'-- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/local_setup.dsv\n'}
+[1.875932] (urdf2) StdoutLine: {'line': b'-- Installing: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/package.dsv\n'}
+[1.876076] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/packages/urdf2\n'}
+[1.876174] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/cmake/urdf2Config.cmake\n'}
+[1.876262] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/cmake/urdf2Config-version.cmake\n'}
+[1.876349] (urdf2) StdoutLine: {'line': b'-- Up-to-date: /home/sigmaros/dev_ws/install/urdf2/share/urdf2/package.xml\n'}
+[1.878526] (urdf2) CommandEnded: {'returncode': 0}
+[1.903507] (-) TimerEvent: {}
+[1.925313] (urdf2) JobEnded: {'identifier': 'urdf2', 'rc': 0}
+[1.925973] (-) EventReactorShutdown: {}
