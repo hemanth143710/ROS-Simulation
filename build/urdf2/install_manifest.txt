@@ -1,4 +1,3 @@
-/home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/r2d2.rviz
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/robot_4wd.urdf.xml
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/bot.urdf.xml
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/bringup.launch.py
