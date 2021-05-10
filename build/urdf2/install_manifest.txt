@@ -1,8 +1,14 @@
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/robot_4wd.urdf.xml
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/urdf/bot.urdf.xml
+/home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/slam.launch.py
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/bringup.launch.py
+/home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/localization.launch.py
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/launch/demo.launch.py
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/world/emptyworld.world
+/home/sigmaros/dev_ws/install/urdf2/share/urdf2/models/room_plan2/model.config
+/home/sigmaros/dev_ws/install/urdf2/share/urdf2/models/room_plan2/model.sdf
+/home/sigmaros/dev_ws/install/urdf2/share/urdf2/models/room_paln1/model.config
+/home/sigmaros/dev_ws/install/urdf2/share/urdf2/models/room_paln1/model.sdf
 /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/package_run_dependencies/urdf2
 /home/sigmaros/dev_ws/install/urdf2/share/ament_index/resource_index/parent_prefix_path/urdf2
 /home/sigmaros/dev_ws/install/urdf2/share/urdf2/environment/ament_prefix_path.sh

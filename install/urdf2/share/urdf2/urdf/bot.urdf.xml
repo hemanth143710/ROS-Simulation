@@ -181,6 +181,15 @@
         <child link="RPlidar"/>
         <origin xyz="0.0 0.0 0.034" rpy="0.0 0.0 0.0"/>
     </joint>
+    <link name="imu_link">
+    </link>
+
+    <!--excelating IMU joint -->
+    <joint name="imu_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="imu_link"/>
+        <origin xyz="0.0 0 0.068" rpy="0 0 0"/>
+    </joint>
 
     <gazebo>
         <plugin name='skid_steer_drive' filename='libgazebo_ros_diff_drive.so'>

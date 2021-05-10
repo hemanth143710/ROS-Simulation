@@ -42,6 +42,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/sigmaros/dev_ws/src/urdf2/urdf"
     "/home/sigmaros/dev_ws/src/urdf2/launch"
     "/home/sigmaros/dev_ws/src/urdf2/world"
+    "/home/sigmaros/dev_ws/src/urdf2/models"
     )
 endif()
 

@@ -9,7 +9,7 @@
 	 		<uri>model://sun</uri>
 		</include>
 		<include>
-	 		<uri>model://floorplan1</uri>
+	 		<uri>model://room_paln1</uri>
 		</include>
 
 	</world>
